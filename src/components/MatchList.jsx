@@ -6,8 +6,8 @@ import MatchCard from './MatchCard';
 const MatchList = () => {
     const dispatch = useDispatch();
     const { liveMatches, recentMatches, loading, error } = useSelector((state) => state.matches);
-    // console.log(liveMatches.filters);
-    // console.log(recentMatches.filters);
+    console.log(liveMatches);
+    console.log(recentMatches);
     
     useEffect(() => {
         dispatch(fetchLiveMatches());

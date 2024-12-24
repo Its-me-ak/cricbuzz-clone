@@ -20,7 +20,7 @@ const matchesSlice = createSlice({
             })
             .addCase(fetchLiveMatches.fulfilled, (state, action) => {
                 state.loading = false
-                state.matches = action.payload
+                state.liveMatches = action.payload
             })
             .addCase(fetchLiveMatches.rejected, (state, action) => {
                 state.loading = false
