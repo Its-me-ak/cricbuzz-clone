@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: #E3E6E3;
+    font-family: helvetica, "Segoe UI", Arial, sans-serif;
+    color: #222;
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+
+.page{
+  max-width: 980px;
+  margin:  0 auto;
+  position: relative;
+}

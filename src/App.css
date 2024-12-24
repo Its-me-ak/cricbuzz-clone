@@ -1,0 +1,23 @@
+/* Navbar */
+.cb-plus-ico {
+    background: url('./assets/img/cb_plus_sprite.png') no-repeat scroll;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.cb-user-icon {
+    background-position: -628px -19px;
+}
+
+.cb-caret-down {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    margin-bottom: 1px;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-top: 4px solid;
+}
