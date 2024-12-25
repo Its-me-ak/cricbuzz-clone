@@ -1,4 +1,4 @@
-import {createAsyncThunk} from '@reduxjs/toolkit'
+import { createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios'
 
 const API_URI = 'https://cricbuzz-cricket.p.rapidapi.com/matches/v1'
@@ -10,8 +10,8 @@ const headers = {
 export const fetchRecentMatches = createAsyncThunk(
     'matches/fetchRecentMatches',
     async () => {
-        const response = await axios.get(`${API_URI}/recent`, {headers})
-        console.log(response.data);
+        const response = await axios.get(`${API_URI}/recent`, { headers })
+        // console.log(response.data);
         return response.data
     }
 )
@@ -20,7 +20,7 @@ export const fetchLiveMatches = createAsyncThunk(
     'matches/fetchLiveMatches',
     async () => {
         const response = await axios.get(`${API_URI}/live`, { headers })
-        console.log(response.data);
+        // console.log(response.data);
         return response.data
     }
 )
