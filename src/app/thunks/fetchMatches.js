@@ -7,15 +7,6 @@ const headers = {
     'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com',
 }
 
-export const fetchRecentMatches = createAsyncThunk(
-    'matches/fetchRecentMatches',
-    async () => {
-        const response = await axios.get(`${API_URI}/recent`, { headers })
-        // console.log(response.data);
-        return response.data
-    }
-)
-
 export const fetchLiveMatches = createAsyncThunk(
     'matches/fetchLiveMatches',
     async () => {
